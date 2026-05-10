@@ -19,7 +19,7 @@ interface Spark {
 }
 
 const ClickSpark = ({
-  sparkColor = "#fff",
+  sparkColor = "#000",
   sparkSize = 10,
   sparkRadius = 15,
   sparkCount = 8,
