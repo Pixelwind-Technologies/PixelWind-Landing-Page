@@ -10,6 +10,7 @@ import {
 
 import appCss from "../styles.css?url";
 import logo from "../assets/logo.png?url";
+import ClickSpark from "../components/animations/ClickSpark";
 
 
 function NotFoundComponent() {
@@ -120,7 +121,15 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Outlet />
+      <ClickSpark
+        sparkColor="#fff"
+        sparkSize={10}
+        sparkRadius={15}
+        sparkCount={8}
+        duration={400}
+      >
+        <Outlet />
+      </ClickSpark>
     </QueryClientProvider>
   );
 }
